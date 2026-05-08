@@ -9,10 +9,10 @@ package:
 environment:
   contents:
     packages:
+      - busybox
       - go
-      - build-base
       - git
-      - ca-certificates-bundle
+      - patch
 
 pipeline:
   - uses: git-checkout

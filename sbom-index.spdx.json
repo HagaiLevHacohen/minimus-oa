@@ -1,0 +1,101 @@
+{
+  "SPDXID": "SPDXRef-DOCUMENT",
+  "name": "sbom-sha256:32581eab4ca9f8b4699a4e4f2ba50e4a74074db72a26238c0b169b71856406e4",
+  "spdxVersion": "SPDX-2.3",
+  "creationInfo": {
+    "created": "2026-05-01T12:56:41Z",
+    "creators": [
+      "Tool: apko (v0.30.16)",
+      "Organization: Chainguard, Inc"
+    ],
+    "licenseListVersion": "3.16"
+  },
+  "dataLicense": "CC0-1.0",
+  "documentNamespace": "https://spdx.org/spdxdocs/apko/",
+  "documentDescribes": [
+    "SPDXRef-Package-sha256-32581eab4ca9f8b4699a4e4f2ba50e4a74074db72a26238c0b169b71856406e4"
+  ],
+  "packages": [
+    {
+      "SPDXID": "SPDXRef-Package-sha256-32581eab4ca9f8b4699a4e4f2ba50e4a74074db72a26238c0b169b71856406e4",
+      "name": "sha256:32581eab4ca9f8b4699a4e4f2ba50e4a74074db72a26238c0b169b71856406e4",
+      "versionInfo": "sha256:32581eab4ca9f8b4699a4e4f2ba50e4a74074db72a26238c0b169b71856406e4",
+      "filesAnalyzed": false,
+      "description": "Multi-arch image index",
+      "downloadLocation": "NOASSERTION",
+      "supplier": "Organization: Chainguard, Inc.",
+      "sourceInfo": "Generated at image build time by apko",
+      "primaryPackagePurpose": "CONTAINER",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "32581eab4ca9f8b4699a4e4f2ba50e4a74074db72a26238c0b169b71856406e4"
+        }
+      ],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:oci/dasel@sha256%3A32581eab4ca9f8b4699a4e4f2ba50e4a74074db72a26238c0b169b71856406e4?mediaType=application%2Fvnd.oci.image.index.v1%2Bjson",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-sha256-52f3310ccb90ce4d752f0ef2b30c87be991d955923fb3b5408bc84692ac8aa21",
+      "name": "sha256:52f3310ccb90ce4d752f0ef2b30c87be991d955923fb3b5408bc84692ac8aa21",
+      "versionInfo": "sha256:52f3310ccb90ce4d752f0ef2b30c87be991d955923fb3b5408bc84692ac8aa21",
+      "filesAnalyzed": false,
+      "downloadLocation": "NOASSERTION",
+      "supplier": "Organization: Chainguard, Inc.",
+      "primaryPackagePurpose": "CONTAINER",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "52f3310ccb90ce4d752f0ef2b30c87be991d955923fb3b5408bc84692ac8aa21"
+        }
+      ],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:oci/dasel@sha256%3A52f3310ccb90ce4d752f0ef2b30c87be991d955923fb3b5408bc84692ac8aa21?arch=amd64\u0026mediaType=application%2Fvnd.oci.image.manifest.v1%2Bjson\u0026os=linux",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-gitC43ssh-C47C47github.comC47HagaiLevHacohenC47minimus-oa.gitC64973a883ee6b08f46610a86e1684240b7e8ab17ce",
+      "name": "github.com/HagaiLevHacohen/minimus-oa.git",
+      "versionInfo": "973a883ee6b08f46610a86e1684240b7e8ab17ce",
+      "filesAnalyzed": false,
+      "description": "Image configuration source",
+      "downloadLocation": "git+ssh://github.com/HagaiLevHacohen/minimus-oa.git@973a883ee6b08f46610a86e1684240b7e8ab17ce",
+      "supplier": "Organization: Chainguard, Inc.",
+      "primaryPackagePurpose": "SOURCE",
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "973a883ee6b08f46610a86e1684240b7e8ab17ce"
+        }
+      ],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:github/HagaiLevHacohen/minimus-oa@973a883ee6b08f46610a86e1684240b7e8ab17ce",
+          "referenceType": "purl"
+        }
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "spdxElementId": "SPDXRef-Package-sha256-32581eab4ca9f8b4699a4e4f2ba50e4a74074db72a26238c0b169b71856406e4",
+      "relationshipType": "VARIANT_OF",
+      "relatedSpdxElement": "SPDXRef-Package-sha256-52f3310ccb90ce4d752f0ef2b30c87be991d955923fb3b5408bc84692ac8aa21"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-sha256-32581eab4ca9f8b4699a4e4f2ba50e4a74074db72a26238c0b169b71856406e4",
+      "relationshipType": "GENERATED_FROM",
+      "relatedSpdxElement": "SPDXRef-Package-gitC43ssh-C47C47github.comC47HagaiLevHacohenC47minimus-oa.gitC64973a883ee6b08f46610a86e1684240b7e8ab17ce"
+    }
+  ]
+}

@@ -1,0 +1,144 @@
+{
+  "SPDXID": "SPDXRef-DOCUMENT",
+  "name": "sbom-sha256:1ce72b2adb051020db40d73160106846ffcebb97952e572a2d534948f7f2e092",
+  "spdxVersion": "SPDX-2.3",
+  "creationInfo": {
+    "created": "2026-05-01T12:56:41Z",
+    "creators": [
+      "Tool: apko (v0.30.16)",
+      "Organization: Chainguard, Inc"
+    ],
+    "licenseListVersion": "3.16"
+  },
+  "dataLicense": "CC0-1.0",
+  "documentNamespace": "https://spdx.org/spdxdocs/apko/",
+  "documentDescribes": [
+    "SPDXRef-Package-sha256-52f3310ccb90ce4d752f0ef2b30c87be991d955923fb3b5408bc84692ac8aa21"
+  ],
+  "packages": [
+    {
+      "SPDXID": "SPDXRef-Package-sha256-52f3310ccb90ce4d752f0ef2b30c87be991d955923fb3b5408bc84692ac8aa21",
+      "name": "sha256:52f3310ccb90ce4d752f0ef2b30c87be991d955923fb3b5408bc84692ac8aa21",
+      "versionInfo": "sha256:52f3310ccb90ce4d752f0ef2b30c87be991d955923fb3b5408bc84692ac8aa21",
+      "filesAnalyzed": false,
+      "description": "apko container image",
+      "downloadLocation": "NOASSERTION",
+      "supplier": "Organization: Wolfi",
+      "primaryPackagePurpose": "CONTAINER",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "52f3310ccb90ce4d752f0ef2b30c87be991d955923fb3b5408bc84692ac8aa21"
+        }
+      ],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:oci/dasel@sha256%3A52f3310ccb90ce4d752f0ef2b30c87be991d955923fb3b5408bc84692ac8aa21?arch=amd64\u0026mediaType=application%2Fvnd.oci.image.manifest.v1%2Bjson\u0026os=linux",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-sha256-1ce72b2adb051020db40d73160106846ffcebb97952e572a2d534948f7f2e092",
+      "name": "sha256:1ce72b2adb051020db40d73160106846ffcebb97952e572a2d534948f7f2e092",
+      "versionInfo": "20230201",
+      "filesAnalyzed": false,
+      "description": "apko operating system layer",
+      "downloadLocation": "NOASSERTION",
+      "supplier": "Organization: Wolfi",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:oci/dasel@sha256%3A1ce72b2adb051020db40d73160106846ffcebb97952e572a2d534948f7f2e092?arch=amd64\u0026mediaType=application%2Fvnd.oci.image.layer.v1.tar%2Bgzip\u0026os=linux",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-OperatingSystem-wolfi",
+      "name": "wolfi",
+      "versionInfo": "20230201",
+      "filesAnalyzed": false,
+      "description": "Operating System",
+      "downloadLocation": "NOASSERTION",
+      "supplier": "Organization: Wolfi",
+      "primaryPackagePurpose": "OPERATING_SYSTEM"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-apk-dasel-3.3.1-r1",
+      "name": "dasel",
+      "versionInfo": "3.3.1-r1",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "MIT",
+      "downloadLocation": "NOASSERTION",
+      "originator": "Organization: Unknown",
+      "supplier": "Organization: Unknown",
+      "copyrightText": "NOASSERTION",
+      "primaryPackagePurpose": "APPLICATION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:apk/unknown/dasel@3.3.1-r1?arch=x86_64",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-Melange-melange-dasel.yaml-973a883ee6b08f46610a86e1684240b7e8ab17ce",
+      "name": "melange/dasel.yaml",
+      "versionInfo": "973a883ee6b08f46610a86e1684240b7e8ab17ce",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "downloadLocation": "NOASSERTION",
+      "originator": "Organization: Unknown",
+      "supplier": "Organization: Unknown",
+      "primaryPackagePurpose": "INSTALL",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:github/https:/%2Funknown%2Funknown%2Funknown@973a883ee6b08f46610a86e1684240b7e8ab17ce#melange/dasel.yaml",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-Source-github.com-TomWright-dasel-v3.3.1-fba653c7f248aff10f2b89fca93929b64707dfc8-0",
+      "name": "dasel",
+      "versionInfo": "v3.3.1",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "MIT",
+      "downloadLocation": "https://github.com/TomWright/dasel/archive/fba653c7f248aff10f2b89fca93929b64707dfc8.tar.gz",
+      "originator": "Organization: Tomwright",
+      "supplier": "Organization: Tomwright",
+      "primaryPackagePurpose": "SOURCE",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:github/tomwright/dasel@v3.3.1",
+          "referenceType": "purl"
+        }
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "spdxElementId": "SPDXRef-Package-sha256-52f3310ccb90ce4d752f0ef2b30c87be991d955923fb3b5408bc84692ac8aa21",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-Package-sha256-1ce72b2adb051020db40d73160106846ffcebb97952e572a2d534948f7f2e092"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-apk-dasel-3.3.1-r1",
+      "relationshipType": "DESCRIBED_BY",
+      "relatedSpdxElement": "SPDXRef-Package-Melange-melange-dasel.yaml-973a883ee6b08f46610a86e1684240b7e8ab17ce"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-apk-dasel-3.3.1-r1",
+      "relationshipType": "GENERATED_FROM",
+      "relatedSpdxElement": "SPDXRef-Package-Source-github.com-TomWright-dasel-v3.3.1-fba653c7f248aff10f2b89fca93929b64707dfc8-0"
+    }
+  ]
+}
