@@ -26,6 +26,7 @@ pipeline:
       patches: patches/CVE-2026-33320.patch
 
   - runs: |
+      mkdir -p "${{targets.destdir}}/usr/bin"
       go build -o "${{targets.destdir}}/usr/bin/dasel" ./cmd/dasel
 
 test:

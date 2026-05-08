@@ -30,3 +30,19 @@ apko build apko/dasel.yaml dasel:3.3.1-patched dasel.tar
 ```bash
 docker load < dasel.tar && chmod +x tests/test.sh && ./tests/test.sh
 ```
+
+
+
+## Notes
+
+Assumptions:
+- Docker is available locally.
+- melange and apko are installed.
+- The repository includes a local signing key pair for package signing/testing convenience.
+Result:
+- Package build passed.
+- Package test passed.
+- apko image build passed.
+- Image tests passed.
+
+With more time, I would add more dasel behavior tests and test the CVE fix at the package-test level as well.
