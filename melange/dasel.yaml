@@ -29,7 +29,11 @@ pipeline:
       go build -o "${{targets.destdir}}/usr/bin/dasel" ./cmd/dasel
 
 test:
+  environment:
+    contents:
+      packages:
+        - busybox
   pipeline:
     - runs: |
-        dasel --version
-        echo '{"name":"hagai"}' | dasel -r json '.name'
+        dasel version
+        test "$(echo '{"foo":{"bar":"baz"}}' | dasel query -i json 'foo.bar')" = '"baz"'
