@@ -39,6 +39,7 @@ Assumptions:
 - Docker is available locally.
 - melange and apko are installed.
 - The repository includes a local signing key pair for package signing/testing convenience.
+
 Result:
 - Package build passed.
 - Package test passed.
