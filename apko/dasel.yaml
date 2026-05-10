@@ -9,7 +9,7 @@ contents:
 
   packages:
     - wolfi-baselayout
-    - dasel
+    - dasel=3.3.1-r1
 
 entrypoint:
   command: /usr/bin/dasel
